@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url("wall4.jpg");
+    background-size: cover;
+}
+.container {
+    background: rgba(54, 42, 65, 0.5);
+    color: #fff;
+    padding: 1rem;
+    width: 40%;
+    margin: 4rem auto;
+    border-radius: 10px;
+}
+
+.weather_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    text-align: center;
+    border: none;
+    background:rgba(255, 255, 255, 0.5);
+    outline: none;
+    color: #000000;
+    padding: 8px 40px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #130303;
+}
+
+
+.weather_units {
+    font-size: 1.5rem;
+}
+
+.weather_units span {
+    cursor: pointer;
+}
+
+.weather_units span:first-child {
+    margin-right:8px;
+}
+
+.weather_body {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.weather_temperature {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.weather_minmax {
+    display: flex;
+    justify-content: center;
+}
+
+.weather_minmax p {
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+.weather_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  
+
+  .weather_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .weather_card,
+  .weather_card div,
+  .weather_card p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .weather_card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .weather_card i {
+    margin-right: 10px;
+  }
+  
+  .weather_card p {
+    margin: 0;
+  }
+  
+  .weather_pressure {
+    margin-left: auto;
+  }
+
+  #weather_city{
+    font-size: 60px;
+  }
+  .weather_datetime{
+    font-size: 8px;
+  }
+  
+  img{
+    width: 30px;
+  }
+  #weather_condition{
+    font-size: 20px;
+    text-transform: capitalize;
+    
+  }
+  #weatherB img{
+    width: 80px;
+    height: 80px;
+  }
+
+  
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  #weather_city{
+    font-size: 40px;
+  }
+
+  .weather_datetime{
+    font-size: 8px;
+  }
+
+  .weather_card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
