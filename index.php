@@ -52,7 +52,7 @@
                 <div>
                     <img src="humidity.png" alt="weather">
                     <p>Humidity: </p>
-                    <p id="weather_humidity">18&#176</p>
+                    <p id="weather_humidity">10&#176</p>
                 </div>
             </div>
             <div class="weather_card">
